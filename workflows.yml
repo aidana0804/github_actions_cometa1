@@ -23,7 +23,7 @@ jobs:
           REMOTE_USER: ${{ secrets.REMOTE_USER }}
           TARGET: ${{ secrets.TARGET }}
 
-      # Step 3: Move files to the web server directory and reload Nginx
+      #    Step 3: Move files to the web server directory and reload Nginx
       - name: Restart Nginx
         uses: appleboy/ssh-action@master
         with:
